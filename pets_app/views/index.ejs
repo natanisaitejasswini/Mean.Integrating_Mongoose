@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+</head>
+<body>
+    <h2>All Pets</h2>
+    <% for (i in pets) {%>
+      <p>
+        Name: <%= pets[i].name %>
+      </p>
+      <p>
+        Description: <%= pets[i].description %>
+      </p>
+      <p>
+        age: <%= pets[i].age %>
+      </p>
+      <a href='/<%= pets[i]._id %>/edit'><button>Edit</button></a>
+      <a href='/<%= pets[i]._id %>'><button>Show</button></a>
+      <form action="/<%= pets[i]._id %>/destroy" method="post">
+        <button>Delete</button>
+      </form>
+      <hr>
+    <% }%>
+    <a href='/new'><button>Add a new Animal</button></a>
+</body>
+</html>
+

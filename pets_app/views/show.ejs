@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+</head>
+<body>
+	<h3>Showing your Choice of pet</h3>
+		Name: <%= pets.name %></p>
+	</p>
+	<p>
+		Description: <%= pets.description %></p>
+	</p>
+	<p>
+		Description: <%= pets.age %></p>
+	</p>
+	<a href='/<%= pets._id %>/edit'><button>Edit</button></a>
+	<form action= "/<%= pets._id %>/destroy" method='post'>
+		<button>Destroy</button>
+	</form>
+	<a href='/'><button>Go Back</button></a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+</head>
+<body>
+    <h2>Edit Likes</h2>
+    <form action='/<%= quotes._id%>' method='post'>
+    Likes: <input type="number" name="vote" value="<%= quotes.vote %>"><br><br>
+    <input type="submit" value="Update"><br>
+    </form>
+    <a href='/quotes'><button>Skip to Quotes</button></a>
+</body>
+</html>

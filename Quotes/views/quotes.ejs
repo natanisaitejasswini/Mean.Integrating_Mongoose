@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" >
+</head>
+<body>
+	<h2>Here are some of the awesome quotes</h2>
+	<% for (var i in quotes) {%>
+      <% var quote = quotes[i] %>
+      <p>
+		"<%= quote.quote %>"
+      </p>
+      <p>
+      	- <%= quote.name %> at <%= quote.createdAt %>
+      </p>
+      <p>
+      	Likes: <%= quote.vote %>
+      	<a href='/<%= quote._id %>/update'><button>Edit</button></a>
+      </p>
+      <hr>
+    <% }%>
+    <a href='/'><button>Add Quote</button></a>
+</body>
+</html>

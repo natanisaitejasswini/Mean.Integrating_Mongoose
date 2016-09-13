@@ -1,0 +1,31 @@
+*{
+margin: 0px;
+padding: 0px;
+font-family: arial;
+font-size: 14px;
+}
+body{
+	border: 1px solid black;
+	margin: 56px 95px 50px 200px;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.message_form{
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+}
+textarea {
+    width: 40em;
+    height: 4em;
+    padding-top: 10px;
+}
+.messages{
+color: green;
+}
+.comments{
+margin-left: 40px;
+}
+.blue{
+color: blue;
+}
